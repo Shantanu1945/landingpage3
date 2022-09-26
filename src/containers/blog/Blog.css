@@ -1,0 +1,181 @@
+.classA body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #161616;
+	min-height: 100vh;
+    
+}
+
+.classA section::before {
+    background: var(--color-footer);
+    background:-moz-linear-gradient(1deg, rgba(94, 163, 255, 1) 0%, rgba(160, 235, 235, 1) 52%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(1deg, rgba(94, 163, 255, 1) 0%, rgba(160, 235, 235, 1) 52%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(1deg, rgba(94, 163, 255, 1) 0%, rgba(160, 235, 235, 1) 52%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5EA3FF', endColorstr='#A0EBEB', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(1deg, rgba(94, 163, 255, 1) 0%, rgba(160, 235, 235, 1) 52%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(1deg, rgba(94, 163, 255, 1) 0%, rgba(160, 235, 235, 1) 52%);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: circle(30% at right 70%);
+}
+
+.classA section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: var(--color-footer);
+    /* ff 3.6+ */
+background:-moz-radial-gradient(circle at 50% 2%, rgba(219, 255, 252, 1) 0%, rgba(132, 194, 243, 1) 47%, rgba(175, 255, 249, 1) 100%);
+
+/* safari 5.1+,chrome 10+ */
+background:-webkit-radial-gradient(circle at 50% 2%, rgba(219, 255, 252, 1) 0%, rgba(132, 194, 243, 1) 47%, rgba(175, 255, 249, 1) 100%);
+
+/* opera 11.10+ */
+background:-o-radial-gradient(circle at 50% 2%, rgba(219, 255, 252, 1) 0%, rgba(132, 194, 243, 1) 47%, rgba(175, 255, 249, 1) 100%);
+
+/* ie 10+ */
+background:-ms-radial-gradient(circle at 50% 2%, rgba(219, 255, 252, 1) 0%, rgba(132, 194, 243, 1) 47%, rgba(175, 255, 249, 1) 100%);
+
+/* global 92%+ browsers support */
+background:radial-gradient(circle at 50% 2%, rgba(219, 255, 252, 1) 0%, rgba(132, 194, 243, 1) 47%, rgba(175, 255, 249, 1) 100%);
+	clip-path: circle(20% at 10% 10%);
+}
+.ClassA h1{
+    padding-top: 3rem;
+    color: rgb(169, 0, 150);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 58px;
+	text-align: center;
+
+
+}
+
+ .container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+ .container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+ .container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+ .container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+ .container .card .content .contentBx h3 {
+	color: rgb(64, 67, 107);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 28px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+ .container .card .content .contentBx h3 span {
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: initial;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+    margin-right: 5px;
+    margin-top: 3px;
+    
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 10 5px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+   
+}
+
+ .container .card:hover .sci li {
+	transform: translateY(1px);
+	opacity: 1;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.container .card .sci li a {
+	color: rgb(48, 45, 47);
+	font-size: 20px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-top: 3px;
+    padding-top: 3px;
+    
+}
