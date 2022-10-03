@@ -1,0 +1,125 @@
+.main-services-wrapper {
+    background: rgb(218, 218, 218);
+    height: 100%;
+    margin-left: 1rem;
+  }
+  
+  .services-wrapper {
+    padding: 10rem 0 0;
+    margin-left: 3rem;
+  }
+  
+  .services-wrapper h1 {
+    text-transform: uppercase;
+    color: rgb(0, 59, 69);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5rem;
+  }
+  .services-wrapper h4 {
+    text-transform: uppercase;
+    color: rgb(0, 59, 69);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+  .icon-wevdev::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f1c9';
+    font-size: 1.7em;
+    color: rgb(253, 126, 104);
+  }
+  
+  .icon-design::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f5ae';
+    font-size: 1.7em;
+    color: tomato;
+  }
+  
+  .icon-google-adwords::before {
+    font-family: 'Font Awesome 5 Brands';
+    content: '\f1a0';
+    font-size: 1.7em;
+    color: tomato;
+  }
+  
+  .icon-smm::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f0c0';
+    font-size: 1.7em;
+    color: tomato;
+  }
+  
+  .icon-app-dev::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f3cd';
+    font-size: 1.7em;
+    color: tomato;
+  }
+  
+  .icon-support::before {
+    font-family: 'Font Awesome 5 Pro';
+    content: '\f2a0';
+    font-size: 1.7em;
+    color: tomato;
+  }
+  
+  .service-box {
+    display: grid;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 18rem;
+    height: 14rem;
+    text-align: center;
+    margin-left: 5rem;
+    background: #fff;
+    border-bottom: 2px solid tomato;
+  }
+  
+  .services-wrapper .row .col-md-4 {
+    margin-bottom: 3rem;
+  }
+  
+  .service-box span {
+    margin-bottom: 1rem;
+  }
+  
+  .service-box h5 {
+    font-weight: 800;
+  }
+  
+  .container-fluid .btn{
+    justify-content: center;
+    display: inline-block;
+    margin-left: -1rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    margin-right: 2rem;
+    background-color: rgb(109, 0, 0);
+  }
+
+  @media(max-width :670px){
+
+    .services-wrapper{
+      width : 17.5rem;
+      margin-left: -1rem;
+    }
+    .container-fluid .btn{
+      justify-content: center;
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-left: 4rem;
+
+    }
+    .service-box{
+      width : 17.5rem;
+      margin-left: 2rem;
+
+    }
+    .service-box h5 {
+      font-weight: 400;
+      margin-top: -1rem;
+    }
+  }  
