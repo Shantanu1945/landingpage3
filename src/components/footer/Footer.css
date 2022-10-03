@@ -1,0 +1,25 @@
+.footer{
+    background: #949494;
+}
+
+ul{
+    list-style-type: none;
+    text-transform: capitalize;
+    
+}
+
+ul li a{
+
+    color : rgb(9, 57, 42);
+
+}
+
+ul li a:hover{
+
+    color: rgb(50, 7, 135);
+    text-decoration: underline;
+    font-size: 130%;
+}
+.btn1{
+    color: rgb(230, 182, 72);
+}

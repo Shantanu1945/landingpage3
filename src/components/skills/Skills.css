@@ -1,0 +1,57 @@
+.skills {
+padding: 4rem 0;
+background-color: rgb(225, 225, 225) ;
+width: 100vw;
+height: 150vh;
+
+align-items: center;
+
+}
+
+.skills h1 {
+    text-align: center;
+}
+.d-block{
+    width: 100%;
+    position: relative;
+}
+.card {
+    margin : 5rem;
+}
+.card:hover h5{
+      background-color: azure;
+      height: 4rem;
+      font-size: 3rem;
+      text-shadow: 1ch;
+      color: blue;
+      background: scroll;
+
+}
+
+
+@media(max-width: 670px) {
+    .skills {
+
+        height: fit-content;
+
+    }
+
+    .card {
+        margin : 2rem;
+    }
+    .card:hover h5{
+        background-color: rgb(16, 174, 174);
+        height: 2rem;
+        font-size: 2rem;
+        text-shadow: 1ch;
+        color: rgb(59, 59, 86);
+        background: scroll;
+  
+  }
+  .card:hover p{
+
+    margin-top: 3rem;
+
+
+  }
+}

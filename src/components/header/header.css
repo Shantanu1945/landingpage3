@@ -1,0 +1,134 @@
+:root {
+  --dark-purple: #202330;
+  --light-purple: #7b84aa;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--dark-purple), var(--light-purple));
+}
+
+.header img {
+  margin-top : 3rem;
+  width: 10rem;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: flex-end;
+  border: 1px solid rgba(97,105,136,0.7);
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+#main-title {
+  
+  padding: 2rem;
+  align-self: flex-start;
+  width: 43.75rem;
+}
+
+/********************** ICONS *******************************/
+.icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 0.7rem;
+  overflow: hidden;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  margin-top: 0.8rem;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+  margin-bottom: 0.81rem;
+}
+
+.item-1 {
+  background: url(icons/html5-logo.svg) no-repeat;
+}
+
+.item-2 {
+  background: url(icons/css3-logo.svg) no-repeat;
+}
+.item-3 {
+  background: url(icons/js-logo-black.svg) no-repeat;
+}
+.item-4 {
+  background: url(icons/react-logo-black.svg) no-repeat;
+}
+.item-5 {
+  background: url(icons/node-dot.svg) no-repeat;
+}
+.item-6 {
+  background: url(icons/redux-logo-black.svg) no-repeat;
+}
+.item-7 {
+  background: url(icons/sass.svg) no-repeat;
+}
+.item-8 {
+  background: url(icons/git-logo.svg) no-repeat;
+}
+
+.ex2{
+  margin-left :-4rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  
+}
+.ex2 .btn{
+  background-color: rgb(213, 136, 20);
+  cursor: pointer;
+}
+.ex3{
+  margin-left: 2rem;
+  cursor: pointer;
+
+}
+.ex .btn{
+  background-color: rgb(213, 136, 20);
+  cursor: pointer;
+}
+
+/****Mobile*****/
+
+@media(max-width :670px) {
+
+  #main-title{
+    width :33.75rem;
+  }
+  
+}
+@media(min-width : 320px) and (max-width : 460px) {
+  #main-title {
+    width :23.75rem;
+  }
+  .item{
+    width : 20px;
+    height : 20px;
+    margin :0.7rem;
+  }
+  .header img{
+    margin-top: 8rem;
+  }
+  .ex2{
+    margin-left :4rem;
+    cursor: pointer;
+    
+  }
+  .ex{
+    margin-left :3rem;
+    cursor: pointer;
+    font-size: large;
+    
+  }
+  
+}
+
+
+
+
